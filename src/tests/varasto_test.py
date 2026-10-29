@@ -49,7 +49,7 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(saatu_maara, 2)
         
         saatu_maara1 = self.varasto1.ota_varastosta(-2)
-        self.assertAlmostEqual(saatu_maara1, 0)
+        self.assertAlmostEqual(saatu_maara1, -10)
         
         saatu_maara3 = self.varasto3.ota_varastosta(12)
         self.assertAlmostEqual(saatu_maara3, 10)
