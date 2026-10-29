@@ -1,6 +1,8 @@
 #Files 
 *.tmp
+.coverage
 
 #Flders
 __pycache__/
 .pytest_cache/
+htmlcov/
