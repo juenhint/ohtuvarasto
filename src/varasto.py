@@ -1,4 +1,4 @@
-#Define the main class Varasto here
+#Define the main class Varasto (storeroom) with methods to add and remove items, check available space, and represent the object as a string.
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
         if tilavuus > 0.0:
