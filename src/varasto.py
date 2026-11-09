@@ -1,6 +1,11 @@
-#Define the main class Varasto (storeroom) with methods to add and remove items, check available space, and represent the object as a string.
+'''
+Define the main class Varasto (storeroom) with methods to add and remove items, 
+check available space, and represent the object as a string.
+'''
+
+
 class Varasto:
-    def __init__(self, tilavuus, alku_saldo = 0):
+    def __init__(self, tilavuus, alku_saldo=0):
         if tilavuus > 0.0:
             self.tilavuus = tilavuus
         else:
@@ -17,7 +22,8 @@ class Varasto:
             # täyteen ja ylimäärä hukkaan!
             self.saldo = tilavuus
 
-    # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
+    # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä
+    # kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
         return self.tilavuus - self.saldo
 
@@ -42,6 +48,6 @@ class Varasto:
 
         return maara
 
-#Print method:
+# Print method:
     def __str__(self):
         return f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()}"
